@@ -1,4 +1,4 @@
-# VS-Code Mirzanevis Snippets
+# VSCode Mirzanevis Snippets
 
 The very basic collection of React and Typescript Snippets.
 This is Mirzanevis of your projects

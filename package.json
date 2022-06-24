@@ -1,8 +1,23 @@
 {
-  "name": "vs-code-mirzanevis",
+  "name": "vscode-mirzanevis",
+  "author": "Hamidreza Nazemi",
+  "license": "MIT",
   "displayName": "Mirzanevis - React, Typescript Snippets",
   "description": "Useful React and Typescript code snippets",
   "version": "0.1.0",
+  "publisher": "Hamidrezana",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hamidrezana/vscode-mirzanevis.git"
+  },
+  "keywords": [
+    "React",
+    "React JS",
+    "React Snippets",
+    "Typescript",
+    "Typescript Snippets"
+  ],
   "engines": {
     "vscode": "^1.68.0"
   },
