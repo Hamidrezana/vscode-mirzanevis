@@ -1,0 +1,30 @@
+{
+  "name": "vs-code-mirzanevis",
+  "displayName": "Mirzanevis - React, Typescript Snippets",
+  "description": "Useful React and Typescript code snippets",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.code-snippets"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.40",
+    "@types/vscode": "^1.63.0",
+    "@vscode/test-electron": "^1.6.1",
+    "typescript": "^4.0.0"
+  }
+}
