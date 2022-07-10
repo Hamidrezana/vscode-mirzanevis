@@ -13,7 +13,7 @@ export const createFile = ({ path, fileName, fileContent }: CreateFileArgs) => {
     if (!existsSync(path)) {
       mkdirSync(path);
     }
-    writeFile(`${path}/${fileName}`, fileContent, "utf8", (error) => {
+    writeFile(`${path}/${fileName}`, fileContent || "", "utf8", (error) => {
       if (error) {
         reject(error);
         return;

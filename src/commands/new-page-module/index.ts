@@ -6,8 +6,9 @@ const createModuleTemplate = (pageName: string, targetDirectory: string) => {
   const pageDirName = Utils.ChangeCaseUtils.pascalCase(pageName);
   const targetPathDirectory = `${targetDirectory}/modules/${pageDirName}`;
   const targetPathFile = `${targetPathDirectory}/index.tsx`;
-  if (Utils.FsUtils.existsSync(targetPathFile))
+  if (Utils.FsUtils.existsSync(targetPathFile)) {
     throw Error(`Module ${pageName} already exists`);
+  }
 
   return Utils.FsUtils.createFile({
     path: targetPathDirectory,
@@ -20,8 +21,9 @@ const createPageTemplate = (pageName: string, targetDirectory: string) => {
   const pageDirName = Utils.ChangeCaseUtils.paramCase(pageName);
   const targetPathDirectory = `${targetDirectory}/pages/${pageDirName}`;
   const targetPathFile = `${targetPathDirectory}/index.tsx`;
-  if (Utils.FsUtils.existsSync(targetPathFile))
+  if (Utils.FsUtils.existsSync(targetPathFile)) {
     throw Error(`Page ${pageName} already exists`);
+  }
 
   return Utils.FsUtils.createFile({
     path: targetPathDirectory,
