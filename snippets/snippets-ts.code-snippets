@@ -14,13 +14,15 @@
       "",
       "export default $1;"
     ],
-    "description": "Create \"React Functional Component\" with it's props interface"
+    "description": "Create \"React Functional Component\" with it's props interface",
+    "scope": "typescript, typescriptreact"
   },
 
   "useState": {
     "prefix": "bus",
     "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
-    "description": "Declare a new state using the State Hook. Hit Tab to apply CamelCase to function"
+    "description": "Declare a new state using the State Hook. Hit Tab to apply CamelCase to function",
+    "scope": "typescript, typescriptreact"
   },
 
   "DTO Types": {
@@ -33,12 +35,14 @@
       "export type $1ResultType = { $5 }",
       "// * $1"
     ],
-    "description": "Declare types for a \"DTO\""
+    "description": "Declare types for a \"DTO\"",
+    "scope": "typescript, typescriptreact"
   },
 
   "Console Logging": {
     "prefix": "bcgl",
     "body": ["console.log($1);"],
-    "description": "Create \"console.log\""
+    "description": "Create \"console.log\"",
+    "scope": "typescript, typescriptreact"
   }
 }
